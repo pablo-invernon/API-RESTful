@@ -1,12 +1,12 @@
 app: todo-list-serverless
 service: serverless-rest-api-with-dynamodb
 
-frameworkVersion: "1.83.2"
+frameworkVersion: ">=1.1.0 <2.0.0"
 enableLocalInstallationFallback: true
 
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.7
   environment:
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
