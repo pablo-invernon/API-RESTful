@@ -1,6 +1,5 @@
-@echo "CONSTRUYENDO IMAGEN"
 
-set IMAGE=api-restful:serverless-latest
+call docker-scripts-common.cmd
 
 docker container run  -v %cd%:/usr/src/todo-list-serverles %IMAGE% serverless deploy
 
