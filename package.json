@@ -5,6 +5,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "postinstall": "pip3 install -r requirements.txt",
     "test": "make test-unit && make test-int"
   }
 }
