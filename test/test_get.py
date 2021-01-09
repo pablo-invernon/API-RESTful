@@ -35,8 +35,8 @@ def test_get():
     }
 
     os.environ['DYNAMODB_TABLE'] = table_name
-
-    dynamodb = boto3.resource('dynamodb', 'us-east-1')
+    
+    dynamodb = boto3.resource('dynamodb')
     table = dynamodb.create_table(
             TableName=table_name,
             KeySchema=[
