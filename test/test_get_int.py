@@ -33,6 +33,7 @@ def test_get():
     }
 
     os.environ['DYNAMODB_TABLE'] = table_name
+    os.environ['AWS_DEFAULT_REGION'] = "us-east-1"
 
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.create_table(
