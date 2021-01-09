@@ -10,7 +10,7 @@ from todos.get import get
 from todos import decimalencoder
 
 
-@pytest.mark.api
+@pytest.mark.int
 def test_get():
 
     table_name = "todo_test_table"
