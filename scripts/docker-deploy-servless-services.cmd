@@ -1,5 +1,9 @@
 
-call docker-scripts-common.cmd
+@call scripts\docker-scripts-common.cmd
 
-docker container run  -v %cd%:/usr/src/todo-list-serverles %IMAGE% serverless deploy
+@echo on
+docker container run -ti --rm --env-file scripts\py.env ^
+    -v %CD%\docker\credentials:/root/.aws/credentials ^
+    -v %CD%:/usr/src/todo-list-serverless %IMAGE% serverless deploy -s Develop
+
 

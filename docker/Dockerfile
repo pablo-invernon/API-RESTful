@@ -4,14 +4,15 @@ WORKDIR /usr/src
 
 ADD requirements.txt ./
 
-RUN apk add --update npm make
+RUN apk add --update gcc npm make python3-dev musl-dev libffi-dev openssl-dev
 RUN npm install -g serverless@1.83.2
-RUN npm install serverless-offline --save-dev
 RUN /usr/local/bin/python -m pip install --upgrade pip
+
+RUN apk add --update 
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p /root/.aws
-ADD credentials /root/.aws/
 
 WORKDIR /usr/src/todo-list-serverless
 
