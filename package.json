@@ -6,6 +6,6 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "pip3 install -r docker/requirements.txt",
-    "test": "make test-unit && make test-int"
+    "test": "make test-unit"
   }
 }
