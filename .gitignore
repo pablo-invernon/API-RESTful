@@ -143,5 +143,5 @@ terraform/.terraform
 
 # Unit Test
 results/
-results/unit-result.xml
+results/unit_result.xml
 
