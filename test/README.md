@@ -10,6 +10,9 @@ Para poder llevarlas a cabo se han de cumplir los siguientes requisitos:
     * boto3
  * Imagen de Docker
     * DynamoDB oficial de AWS. 
+
+
+Checking!!!
  
 
 
