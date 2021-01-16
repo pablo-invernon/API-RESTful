@@ -136,3 +136,12 @@ terraform/terraform.tfstate
 terraform/terraform
 terraform/terraform.tfstate.backup
 terraform/.terraform
+
+
+# Serverless
+.serverless/
+
+# Unit Test
+results/
+results/unit_result.xml
+
