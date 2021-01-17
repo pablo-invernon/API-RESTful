@@ -12,9 +12,6 @@ Para poder llevarlas a cabo se han de cumplir los siguientes requisitos:
     * DynamoDB oficial de AWS. 
 
 
-Checking!!!
- 
-
 
 
 Pasos para ejecutar DynamoDB en local
