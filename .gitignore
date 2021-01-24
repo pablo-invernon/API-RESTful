@@ -145,3 +145,5 @@ terraform/.terraform
 results/
 results/unit_result.xml
 
+docker/config
+docker/credentials
